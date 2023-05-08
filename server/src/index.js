@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 8080
+//const port = 8080
 require('dotenv').config()
 
 //we need to parse the body sent in order to read
@@ -34,6 +34,6 @@ const users = [
 
 app.listen(process.env.PORT, () => {
 
-      console.log(`Example app listening on port ${port}`)
+      console.log(`Example app listening on port ${process.env.PORT}`)
     
     });
